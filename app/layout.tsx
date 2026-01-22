@@ -38,6 +38,20 @@ export const metadata: Metadata = {
   icons: {
     icon: "favicon.ico",
   },
+  keywords:["portfolio","gaurav kumar","full stack developer","next.js developer","react developer","node.js developer","web developer","software engineer","javascript developer","typescript developer","frontend developer","backend developer","mern stack developer","developer portfolio","personal website"],
+
+  robots: {
+      index:true,
+      follow:true,
+      nocache: true,
+      googleBot: {
+          index:true,
+          follow:true,
+          "max-snippet": -1,
+          "max-image-preview": "large",
+          "max-video-preview": -1
+      }
+  }
 };
 
 export default function RootLayout({

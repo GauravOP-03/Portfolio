@@ -82,13 +82,13 @@ const Footer: React.FC = () => {
                         {[
                             { icon: Twitter, link: "https://x.com/GauravOP_03" },
                             { icon: Github, link: "https://github.com/GauravOP-03" },
-                            { icon: Linkedin, link: "https://linkedin.com" } // Add your LinkedIn URL
+                            { icon: Linkedin, link: "https://www.linkedin.com/in/gaurav-kumar-5813bb321" } // Add your LinkedIn URL
                         ].map((social, index) => (
                             <motion.a
                                 key={index}
                                 href={social.link}
                                 target="_blank"
-                                rel="noreferrer"
+                                rel="noopener noreferrer nofollow"
                                 whileHover={{ scale: 1.2, color: "#fff" }}
                                 whileTap={{ scale: 0.9 }}
                                 className="text-slate-400 transition-colors"

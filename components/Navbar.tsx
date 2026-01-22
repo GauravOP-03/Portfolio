@@ -48,7 +48,7 @@ const Navbar: React.FC = () => {
                 <motion.a
                     href="https://cal.com/gaurav-kumar-md11eh"
                     target="_blank"
-                    rel="noopener noreferrer"
+                    rel="noopener noreferrer nofollow"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                     className="hidden md:block bg-primary hover:bg-primary/90 text-white px-5 py-2 rounded-full text-xs font-bold uppercase tracking-wider transition-all shadow-[0_0_15px_rgba(59,130,246,0.5)] hover:shadow-[0_0_25px_rgba(59,130,246,0.6)]"
