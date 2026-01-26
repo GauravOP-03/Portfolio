@@ -10,7 +10,7 @@ const Hero: React.FC = () => {
     const [show3D, setShow3D] = useState(true);
 
     return (
-        <section className="relative min-h-[100dvh] flex flex-col items-center justify-center pt-32 pb-12 px-4 md:px-6 overflow-hidden bg-black">
+        <section className="relative min-h-[100vh] flex flex-col items-center justify-center pt-32 pb-12 px-4 md:px-6 overflow-hidden bg-black">
 
             {/* 3D TOGGLE SWITCH 
                - Mobile: Top 28 (clears navbar), Right 4
