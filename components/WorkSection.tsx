@@ -1,5 +1,5 @@
 import React from 'react';
-import { ExternalLink, Github, ArrowRight, CheckCircle2, Globe, Bot, Play, Loader2, Sparkles } from 'lucide-react';
+import {  Github, ArrowRight, CheckCircle2, Globe, Bot, Play, Loader2, Sparkles } from 'lucide-react';
 import Link from 'next/link';
 import { motion } from 'motion/react';
 
