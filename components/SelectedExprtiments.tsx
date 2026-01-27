@@ -1,6 +1,7 @@
 import React from 'react';
 import { ArrowRight, Database, Zap, LayoutDashboard } from 'lucide-react';
 import { motion } from 'motion/react';
+import Image from "next/image";
 
 const projects = [
     {
@@ -8,21 +9,21 @@ const projects = [
         category: "WebSocket Architecture",
         description: "Built high-concurrency systems for live quiz apps and collaborative note-taking platforms (NoteNest).",
         icon: <Zap className="w-4 h-4" />,
-        image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2670&auto=format&fit=crop"
+        image: "/image1.png"
     },
     {
         title: "Admin Analytics Dashboard",
         category: "Internal Business Tools",
         description: "A comprehensive management panel for approving agents, managing users, and tracking university stats.",
         icon: <LayoutDashboard className="w-4 h-4" />,
-        image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2426&auto=format&fit=crop"
+        image: "/image2.png"
     },
     {
         title: "Scalable Database Design",
         category: "Backend Architecture",
         description: "Architecting complex, normalized SQL schemas from scratch designed to handle massive data growth.",
         icon: <Database className="w-4 h-4" />,
-        image: "https://images.unsplash.com/photo-1544383835-bda2bc66a55d?q=80&w=2121&auto=format&fit=crop"
+        image: "/image3.png"
     }
 ];
 
@@ -67,6 +68,7 @@ const MoreCapabilities: React.FC = () => {
                 <motion.div
                     initial={{ opacity: 0, x: 20 }}
                     whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{once: true}}
                     transition={{ delay: 0.4 }}
                     className="hidden md:flex gap-2 text-slate-500 text-sm items-center"
                 >
@@ -95,12 +97,15 @@ const MoreCapabilities: React.FC = () => {
                         className="min-w-[300px] md:min-w-[400px] snap-center group cursor-pointer"
                     >
                         {/* Image Container */}
-                        <div className="relative rounded-xl overflow-hidden aspect-[4/3] mb-4 border border-white/10">
+                        <div className="relative rounded-xl overflow-hidden aspect-[4/3] mb-4 border border-white/10 hover:scale-95 transition-transform duration-300">
                             {/* 1. The Background Image */}
-                            <div
+                            <Image
+                                src={item.image}
+                                fill
+                                alt={item.title}
                                 className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
-                                style={{ backgroundImage: `url("${item.image}")` }}
-                            ></div>
+
+                            ></Image>
 
                             {/* 2. THE FIX: Purple Tint Overlay */}
                             <div className="absolute inset-0 bg-violet-600/20 mix-blend-overlay z-10 pointer-events-none"></div>
