@@ -45,11 +45,7 @@ const MoreCapabilities: React.FC = () => {
             opacity: 1,
             x: 0,
         },
-        transition: {
-            type: "spring",
-            stiffness: 50,
-            damping: 20
-        }
+        transition: { duration: 0.6, ease: "easeOut" }
     };
 
     return (
